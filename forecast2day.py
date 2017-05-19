@@ -42,16 +42,16 @@ def fetchAPI(city):
         #onlinetime = time.strftime('%Y-%m-%d',time.localtime(time.time()))
         time_txt0 = '这大概是数据运算时间：'+ str(data['list'][0]['dt_txt'])
 
-        timestamp1 = data['list'][0]['dt']
+        timestamp1 = data['list'][1]['dt']
         dayt1 = str(datetime.datetime.fromtimestamp(timestamp1).strftime('%Y-%m-%d %H:%M:%S'))
-        weather1 = data['list'][0]['weather'][0]['main']  # to fetch the 'weather' data from a dict in a list,sounds terrible.
-        description1 = data['list'][0]['weather'][0]['description']
-        temp1 = str(data['list'][0]['main']['temp'])+'℃'
-        clouds1 = '云量:' + str(data['list'][0]['clouds']['all']) + '%'
-        wind1 = '风速:' + str(data['list'][0]['wind']['speed']) + 'meter/sec'
+        weather1 = data['list'][1]['weather'][0]['main']  # to fetch the 'weather' data from a dict in a list,sounds terrible.
+        description1 = data['list'][1]['weather'][0]['description']
+        temp1 = str(data['list'][1]['main']['temp'])+'℃'
+        clouds1 = '云量:' + str(data['list'][1]['clouds']['all']) + '%'
+        wind1 = '风速:' + str(data['list'][1]['wind']['speed']) + 'meter/sec'
         #rain = '降雨指数'+ str(data['rain']['3h'])
         #onlinetime = time.strftime('%Y-%m-%d',time.localtime(time.time()))
-        time_txt1 = '这大概是数据运算时间：'+ str(data['list'][0]['dt_txt'])
+        time_txt1 = '这大概是数据运算时间：'+ str(data['list'][1]['dt_txt'])
 
 
 
