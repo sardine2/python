@@ -40,7 +40,7 @@ def fetchAPI(city):
         wind0 = '风速:' + str(data['list'][0]['wind']['speed']) + 'meter/sec'
         #rain = '降雨指数'+ str(data['rain']['3h'])
         #onlinetime = time.strftime('%Y-%m-%d',time.localtime(time.time()))
-        time_txt0 = '这到底是什么时间？'+ str(data['list'][0]['dt_txt'])
+        time_txt0 = '这大概是数据运算时间：'+ str(data['list'][0]['dt_txt'])
 
         timestamp1 = data['list'][0]['dt']
         dayt1 = str(datetime.datetime.fromtimestamp(timestamp1).strftime('%Y-%m-%d %H:%M:%S'))
@@ -51,7 +51,7 @@ def fetchAPI(city):
         wind1 = '风速:' + str(data['list'][0]['wind']['speed']) + 'meter/sec'
         #rain = '降雨指数'+ str(data['rain']['3h'])
         #onlinetime = time.strftime('%Y-%m-%d',time.localtime(time.time()))
-        time_txt1 = '这到底是什么时间？'+ str(data['list'][0]['dt_txt'])
+        time_txt1 = '这大概是数据运算时间：'+ str(data['list'][0]['dt_txt'])
 
 
 
